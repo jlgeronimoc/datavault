@@ -68,3 +68,10 @@
     {% do return(standardise) -%}
 
 {%- endmacro -%}
+
+
+{%- macro redshift__standard_column_wrapper(hash_content_casing) -%}
+
+    {{ exceptions.warn("WARNING: You have not yet implemented standard_column_wrapper for redshift.") }}
+
+{%- endmacro -%}

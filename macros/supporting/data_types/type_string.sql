@@ -30,3 +30,7 @@
         VARCHAR({{ char_length }})
     {%- endif -%}
 {%- endmacro -%}
+
+{%- macro redshift__type_string() -%}
+    {{ exceptions.warn("WARNING: You have not yet implemented type_string for redshift.") }}
+{%- endmacro -%}

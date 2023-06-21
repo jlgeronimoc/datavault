@@ -69,3 +69,10 @@
     {%- if alias %} AS {{ alias }} {%- endif %}
 
 {%- endmacro -%}
+
+
+{%- macro redshift__cast_date(column_str, as_string=false, alias=none) -%}
+
+    {{ exceptions.warn("WARNING: You have not yet implemented cast_date for redshift.") }}
+
+{%- endmacro -%}

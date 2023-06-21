@@ -59,6 +59,12 @@
 
 {% endmacro %}
 
+{% macro redshift__hash_alg_md5() -%}
+
+    {{ exceptions.warn("WARNING: You have not yet implemented hash_alg_md5 for redshift") }}
+
+{% endmacro %}
+
 
 {#- SHA256 -#}
 
@@ -100,5 +106,11 @@
 {% macro databricks__hash_alg_sha256() -%}
 
     {% do return('UPPER(SHA2([HASH_STRING_PLACEHOLDER], 256))') %}
+
+{% endmacro %}
+
+{% macro redshift__hash_alg_sha256() -%}
+
+    {{ exceptions.warn("WARNING: You have not yet implemented hash_alg_sha256 for redshift") }}
 
 {% endmacro %}

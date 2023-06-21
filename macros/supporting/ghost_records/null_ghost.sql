@@ -22,3 +22,7 @@
 {%- macro sqlserver__null_ghost(datatype, alias) -%}
     {{ automate_dv.bigquery__null_ghost(datatype, alias) }}
 {%- endmacro -%}
+
+{%- macro redshift__null_ghost(datatype, alias) -%}
+    {{ exceptions.warn("WARNING: You have not yet implemented null_ghost for redshift.") }}
+{%- endmacro -%}

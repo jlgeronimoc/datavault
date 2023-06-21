@@ -28,3 +28,7 @@
 {%- macro databricks__type_binary() -%}
     STRING
 {%- endmacro -%}
+
+{%- macro redshift__type_binary() -%}
+    {{ exceptions.warn("WARNING: You have not yet implemented type_binary for redshift.") }}
+{%- endmacro -%}

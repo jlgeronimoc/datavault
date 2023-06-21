@@ -38,3 +38,9 @@
     {{ automate_dv.default__cast_binary(column_str=column_str, alias=alias, quote=quote) }}
 
 {%- endmacro -%}
+
+{%- macro redshift__cast_binary(column_str, alias=none, quote=true) -%}
+
+    {{ exceptions.warn("WARNING: You have not yet implemented cast_binary for redshift.") }}
+
+{%- endmacro -%}

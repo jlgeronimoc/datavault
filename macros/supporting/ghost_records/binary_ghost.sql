@@ -29,3 +29,7 @@
 
     {%- if alias %} AS {{ alias }} {%- endif -%}
 {%- endmacro -%}
+
+{%- macro redshift__binary_ghost(alias, hash) -%}
+    {{ exceptions.warn("WARNING: You have not yet implemented binary_ghost for redshift.") }}
+{%- endmacro -%}

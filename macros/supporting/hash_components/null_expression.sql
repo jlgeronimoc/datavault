@@ -46,3 +46,9 @@
     {% do return(column_expression) %}
 
 {%- endmacro -%}
+
+{%- macro redshift__null_expression(standardise, column_str, null_placeholder_string) -%}
+
+    {{ exceptions.warn("WARNING: You have not yet implemented null_expression for redshift.") }}
+
+{%- endmacro -%}
